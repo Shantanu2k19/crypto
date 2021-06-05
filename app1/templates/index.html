@@ -1,3 +1,15 @@
-hello crypto 
-<br><br>
-{{ obj }}
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="static/index.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <p class="intro">hello crypto</p> 
+        <br><br>
+        <img src="{% static 'media/Photo.jpg' %}" alt="My image">
+        <br><br>
+        {{ obj }}
+    </body>
+</html>
